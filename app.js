@@ -42,10 +42,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+<<<<<<< HEAD
 app.use('/activities', activities);
 app.use('/theteam', team);
 app.use('/contactus', contactus);
 app.use('/facilities', facilities);
+=======
+>>>>>>> sign in page and libraries
 app.use('/signin', signin);
 
 // catch 404 and forward to error handler
