@@ -4,15 +4,29 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var passport =require('passport');
+var flash = require('connect-flash');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var activities = require('./routes/activities');
 var team = require('./routes/team');
 var contactus = require('./routes/contactus');
 var facilities = require('./routes/facilities');
+var signin = require('./routes/signin');
 
 var app = express();
+//passport 
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+  done(null, user);
+});
+
+app.use(passport.initialize());
+app.use(passport.session()); 
+app.use(flash());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +37,7 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(cookieParser());  
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
@@ -32,6 +46,7 @@ app.use('/activities', activities);
 app.use('/theteam', team);
 app.use('/contactus', contactus);
 app.use('/facilities', facilities);
+app.use('/signin', signin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
