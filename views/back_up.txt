@@ -9,3 +9,22 @@ div(class="row")
             p .col-sm-6
         div(class="col-sm-3", style="background-color:lavender;")
             p .col-sm-3
+			
+			
+			
+			
+			
+			 div(class="nav nav-pills")    
+            div(class="col-s-2")
+            div(class="col-sm-6")
+                ul(class="nav nav-pills")
+                    li(role="#",class="active")
+                       a(href="#") HOME
+                    li(role="presentation")
+                        a(href="http://www.facebook.com") ACTIVITIES
+                    li(role="presentation")
+                        a(href="http://www.facebook.com/joatham") FACILITY
+                    li(role="presentation")
+                        a(href="http://www.facebook.com/joatham") OUR TEAM
+                    li(role="presentation")
+                        a(href="http://www.facebook.com/joatham") CONTACTS
