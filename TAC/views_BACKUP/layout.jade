@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/javascripts/bootstrap/dist/css/bootstrap.css')
+    script(src='/javascripts/bootstrap/dist/js/bootstrap.js')
+
+  body
+
+    |<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse">
+    div(class="container-fluid")
+        div(class="navbar-header")
+            a(class="navbar-brand" href="#")
+                img(alt="Brand" src="data:image/jpeg;base64,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")
+    
+        form(class="navbar-form navbar-left",role="search")
+            div(class="form-group")
+               input(type="text",class="form-control",placeholder="Search")
+               button(type="submit",class="btn btn-default") Submit
+    |</nav>
+    br 
+    br
+    br
+
+    
+    ul(class="nav nav-pills")
+        li(role="#",class="active")
+            a(href="#") Home
+        li(role="presentation")
+            a(href="http://www.facebook.com") Profile
+        li(role="presentation")
+            a(href="http://www.facebook.com/joatham") Messages
+
+    br
+
+   div(class="row")
+        div(class="col-sm-3", style="background-color:lavender;")
+            p .col-sm-3
+        div(class="col-sm-6", style="background-color:lavenderblush;")
+            p .col-sm-6
+        div(class="col-sm-3", style="background-color:lavender;")
+            p .col-sm-3
+  
+    block content
+    h1 My first App
+
+   
