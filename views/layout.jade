@@ -11,7 +11,24 @@ html
   body
     div(id="top_nav")
         div(id="center_nav")
-
+    |<div id="fb-root"></div>
+    |<script>
+    |window.fbAsyncInit = function() {
+    |  FB.init({
+    |    appId      : '1580209102219104',
+    |    xfbml      : true,
+    |    version    : 'v2.3'
+    |  });
+    |};
+    |(function(d, s, id) {
+    |var js, fjs = d.getElementsByTagName(s)[0];
+    |if (d.getElementById(id)) return;
+    |js = d.createElement(s); js.id = id;
+    |js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    |fjs.parentNode.insertBefore(js, fjs);
+    |}(document, 'sScript', 'facebook-jssdk'));</script>
+    |<nav class="navbar navbar-default navbar-static-top" role="navigation" id="topnavbar">
+    div(class="container-fluid")
                 a(href="/") HOME
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 a(href="activities") ACTIVITIES
@@ -21,9 +38,6 @@ html
                 a(href="theteam") OUR TEAM
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
                 a(href="contactus") CONTACTS
-
-
-
     block content
     include footer
 
