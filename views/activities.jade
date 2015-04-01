@@ -1,51 +1,22 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/styleHeader.css')
-    link(rel='stylesheet', href='/javascripts/lib/bootstrap/dist/css/bootstrap.css')
-    script(src='/javascripts/lib/jquery/dist/jquery.js')
-    script(src='/javascripts/lib/bootstrap/dist/js/bootstrap.js')
+extends layout
 
-  body
- 
-    div(id="sticky_navigation_wrapper")
-        div(id="sticky_navigation")
-            div(id="sticky_navigation_links")
-
-                a(href="#") HOME
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                a(href="activities") ACTIVITIES
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                a(href="facility") FACILITY
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                a(href="team") OUR TEAM
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                a(href="contacts") CONTACTS
-
-    div(id="head")
-
-        div(id="logo")
-            a(href='http://www.tanayadventurecamp.com')
-                
-                img(alt="Brand" src="/images/logo.png",border="0",style="float:left",margin-top:"-120px")
-
-    block content
-
+block content
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
     div(id="about")
         div(id="aboutcopy")
-
-            <h3>Supervised by highly-skilled facilitators, the camp offers an exclusive array of fine services and amenities to satisfy your outdoor needs as well as accommodations for a worthwhile and exciting stay.
-            <h1>"BUILDING CHARACTER THROUGH ADVENTURE"<br/>
-
+            h3 Supervised by highly-skilled facilitators, the camp offers an exclusive array of fine services and amenities to satisfy your outdoor needs as well as accommodations for a worthwhile and exciting stay.
+            h1 "BUILDING CHARACTER THROUGH ADVENTURE"
     div(id="main")
         div(id="maincontent")
-
             div(id='rightcolumn')
-
-                h4 CAMP ACTIVITIES
-
+                h6 CAMP ACTIVITIES
                 ul(class="camp_act")
                     li(role="presentation")
                        a(href="#") Rappelling
@@ -79,21 +50,16 @@ html
                         a(href="#") Rope Rescue
                     li(role="presentation")
                         a(href="#") Swimming
-               
-               
-
             div(id='blogsample')
             br
-            
-            <h1>TAC Summer Treat!
+            h1 TAC Summer Treat!
             br
             br
-
             &nbsp;&nbsp;&nbsp;
             img(src="/images/summer.jpg") 
             br
             br
-            <h1>KOVEA OUTDOOR COOKFEST 2015
+            h1 KOVEA OUTDOOR COOKFEST 2015
             br
             br
            
@@ -101,12 +67,53 @@ html
             
             br
             br
+
+br
+
+br
+
+div(class="row")
+    div(class="row")
+        
+        img(src="/images/facilities/rappell.jpg",class="img-responsive",alt="Responsive image")
+        
+        div(class="actDesc")
+            <h1>Rappelling
+            br
+            <h4>Try our nerve-racking 50-footer Rappelling Tower where you can conquer your fear of heights with the full support of our well-trained facilitators. Built to specifications, our tower guarantees your safety.
+        
+            
+            
+            
+            
             
 
-
-div(id="footerImage")
-
-div(id="footerAdd") TANAY ADVENTURE CAMP. All Rights Reserved.
-
-
+div(class="row")
+    div(class="row")
+        img(src="/images/facilities/highropes.jpg",class="img-responsive",alt="Responsive image")
+        div(class="actDescRight")
+            <h1>Ropes & Obstacle Courses
+            br
+            <h4>Dare to try our Ropes and Obstacle Courses to test your stamina and stability in crossing different tricky paths.
+        
+            
+            
+            
            
+
+div(class="row")
+    div(class="row")
+        img(src="/images/facilities/naturewalk.jpg",class="img-responsive",alt="Responsive image")
+            
+            
+            
+           
+div(class="row")
+    div(class="row")
+        img(src="/images/facilities/jest.jpg",class="img-responsive",alt="Responsive image")
+            
+            
+            
+           
+    div(class="row")
+        img(src="/images/facilities/gps.jpg",class="img-responsive",alt="Responsive image")
