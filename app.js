@@ -8,6 +8,10 @@ var passport =require('passport');
 var flash = require('connect-flash');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var activities = require('./routes/activities');
+var team = require('./routes/team');
+var contactus = require('./routes/contactus');
+var facilities = require('./routes/facilities');
 var signin = require('./routes/signin');
 
 var app = express();
@@ -38,6 +42,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/activities', activities);
+app.use('/theteam', team);
+app.use('/contactus', contactus);
+app.use('/facilities', facilities);
 app.use('/signin', signin);
 
 // catch 404 and forward to error handler

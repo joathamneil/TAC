@@ -9,31 +9,21 @@ html
     script(src='/javascripts/lib/bootstrap/dist/js/bootstrap.js')
 
   body
-    |<nav class="navbar navbar-default navbar-static-top" role="navigation" id="topnavbar">
-    div(class="container-fluid")
+    div(id="top_nav")
+        div(id="center_nav")
 
-        div(class="navbar-header")
-            img(alt="Brand" src="/images/logo.png")
+                a(href="/") HOME
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                a(href="activities") ACTIVITIES
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                a(href="facilities") FACILITY
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                a(href="theteam") OUR TEAM
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                a(href="contactus") CONTACTS
 
-        div(class="nav nav-pills")    
-            div(class="col-s-2")
-            div(class="col-sm-6")
-                ul(class="nav nav-pills")
-                    li(role="#",class="active")
-                       a(href="#") HOME
-                    li(role="presentation")
-                        a(href="http://www.facebook.com") ACTIVITIES
-                    li(role="presentation")
-                        a(href="http://www.facebook.com/joatham") FACILITY
-                    li(role="presentation")
-                        a(href="http://www.facebook.com/joatham") OUR TEAM
-                    li(role="presentation")
-                        a(href="http://www.facebook.com/joatham") CONTACTS
 
-            form(class="navbar-form navbar-right",role="search")
-                div(class="form-group")
-                   input(type="text",class="form-control",placeholder="Search")
-                   button(type="submit",class="btn btn-default") Submit	
 
-    |</nav>
     block content
+    include footer
+
