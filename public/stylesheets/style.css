@@ -1,21 +1,36 @@
 body {
   padding: 2%;
-    background-color: #fdbb2f;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #d1c9b7;
 }
 
 a {
   color: #00B7FF;
 }
 
+#label {
+    width: 100%;
+    height: 130px;
+    background-color: #d8fd2f;
+    font-size: 48px;
+    text-shadow: 2px 2px #ffffff;
+    background-position: top center;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align:left;
+    line-height: 5px;
+    padding-top:90px;
+    padding-left:20px;
+}
+
 #about {
     width: 100%;
-    height: 218px;
+    height: 190px;
     margin-top: 10px;
     z-index:1011;
     background-color: #d8fd2f;
     background-image:url(../images/aboutBG.jpg);
     background-position: top center;
+    text-align:center;
+    line-height: 5px;
 }
 
 #aboutcopy {
@@ -26,7 +41,23 @@ a {
     background-color: #d8fd2f;
     color: #3f3d37;
     font-size: 20px;
-    line-height: 28px;
+}
+
+#aboutcopy h8 {
+    color: #3f3d37;
+    text-decoration:none;
+    font-size: 18px;
+    font-family:  'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    line-height: 10px;
+
+}
+
+#aboutcopy h7 {
+    color: #fd542f;
+    text-decoration:none;
+    font-size: 18px;
+    font-family:  'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    line-height: 18px;
 }
 
 a {
@@ -68,7 +99,7 @@ a {
 #rightcolumn h6 {
     color: #000000;
     text-decoration:none;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Helvetica-CondensedBoldRg, Verdana, Geneva, sans-serif;
     line-height: 18px;
 
