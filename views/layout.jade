@@ -9,17 +9,18 @@ html
     script(src='/javascripts/lib/bootstrap/dist/js/bootstrap.js')
 
   body
-    div(class="row")
-        div(id="top_nav")
-            div(id="center_nav")
-                    a(href="/") HOME
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    a(href="activities") ACTIVITIES
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    a(href="facilities") FACILITY
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    a(href="theteam") OUR TEAM
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    a(href="contactus") CONTACTS
+    div(class="conainer-fliud")
+        div(class="row")
+            div(id="top_nav")
+                div(id="center_nav")
+                        a(href="/") HOME
+                        &nbsp;&nbsp;
+                        a(href="activities") ACTIVITIES & FACILITIES
+                        &nbsp;&nbsp; 
+                        a(href="facilities") ACCOMODATION & RATES
+                        &nbsp;&nbsp; 
+                        a(href="theteam") OUR TEAM
+                        &nbsp;&nbsp;   
+                        a(href="contactus") CONTACTS
     block content
     include footer
