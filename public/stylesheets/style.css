@@ -1,7 +1,7 @@
 body {
   background: #80d0e5;
-  	background-image:url(../images/watercolor.png);
-    background-repeat:no-repeat;
+  background-image:url(../images/watercolor.png);
+  background-repeat:no-repeat;
 	
 }
 
@@ -62,7 +62,6 @@ a {
     padding-top: 18px;
     padding-bottom: 16px;
     margin: 0 auto;
-    background-color: #80d0e5;
     color: #3f3d37;
     text-align: center;
     font-size: 20px;
@@ -106,37 +105,42 @@ a {
 	position:relative;
 }
 
-#rightcolumn {
+.rightcolumn {
     width: 275px;
     font-size: 14px;
-    font-family: Akzidenz-GroteskNextLightRg, Verdana, Geneva, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     line-height: 21px;
-	position:absolute;
+    list-style:none;
 	top:0;
     right:0;
 	 margin-top: 20px;
 }
 
-#rightcolumnRates {
+.rightcolumnRates {
     width: 275px;
     height: 100px;
     color: #e0edf0;
     float: right;
     background: none repeat scroll 0 0 #4e4739;
     font-size: 12px;
-    font-family: Akzidenz-GroteskNextLightRg, Verdana, Geneva, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     line-height: 21px;
 }
 
-#rightcolumn a {
+.rightcolumn a {
     font-size: 16px;
     color: #4e4739;
     text-decoration:none;
-    font-family: Akzidenz-GroteskNextLightRg, Verdana, Geneva, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 
 }
 
-#rightcolumn h6 {
+.rightcolumn a:hover {
+    color: #996600;
+
+}
+
+.rightcolumn h6 {
     color: #4e4739;
     text-decoration:none;
     font-size: 25px;
@@ -145,7 +149,7 @@ a {
 
 }
 
-#rightcolumn ul li  {
+.rightcolumn ul li  {
     font-size: 16px;
     color: #e0edf0;
     text-align:left;
@@ -154,7 +158,6 @@ a {
     list-style:none;
     margin: 0;
     padding: 0;
-    margin-bottom: 2px;
 }
 
 #blogsample {
@@ -255,7 +258,7 @@ a {
 }
 
 .caption {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 
@@ -329,3 +332,63 @@ section#contact .text-danger {
     height: 200px;
     margin-top: 100px;
 }
+
+
+
+
+
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: none repeat scroll 0 0 #4e4739;
+  opacity: 0.8;
+}
+.carousel-captionBOX {
+
+      text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+/* END NOTHING FOLLLOWS */

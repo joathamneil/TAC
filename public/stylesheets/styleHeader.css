@@ -519,3 +519,8 @@
     text-align:right;
     font-size: 20px;
 }
+
+#top_nav a:hover {
+    color: #996600;
+
+}

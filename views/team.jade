@@ -9,9 +9,43 @@ block content
     br
     br
 
+    <!-- Full Page Image Background Carousel Header -->
+    header(id="myCarousel" class="carousel slide")
+        <!-- Indicators -->
+        ol(class="carousel-indicators")
+            li(data-target="#myCarousel" data-slide-to="0" class="active")
+            li(data-target="#myCarousel" data-slide-to="1")
+            li(data-target="#myCarousel" data-slide-to="2")
+
+        <!-- Wrapper for Slides -->
+        div(class="carousel-inner")
+            div(class="item active")
+                <!-- Set the first background image using inline CSS below. -->
+                div(class="fill" style="background-image:url('/images/team/team_1.jpg');")
+                    div(class="carousel-caption")
+                        <h4>Ours is a group of dynamic and professionally trained facilitators, with established track record in leadership training, and knowledgeable in terms of ropes, hardware, mechanical advantage, water operation and emergency medical and rescue services. So you can be definitely assured of your safety, since it is one of our primary objectives aside from giving you the most unforgettable adventure of your life.
 
 
+            div(class="item")
+                <!-- Set the second background image using inline CSS below. -->
+                div(class="fill" style="background-image:url('/images/team/team_2.jpg');")
+                    div(class="carousel-caption")
+                        <h4>Ours is a group of dynamic and professionally trained facilitators, with established track record in leadership training, and knowledgeable in terms of ropes, hardware, mechanical advantage, water operation and emergency medical and rescue services. So you can be definitely assured of your safety, since it is one of our primary objectives aside from giving you the most unforgettable adventure of your life.
 
+            div(class="item")
+                <!-- Set the third background image using inline CSS below. -->
+                div(class="fill" style="background-image:url('/images/team/team_3.jpg');")
+
+
+        <!-- Controls -->
+        a(class="left carousel-control" href="#myCarousel" data-slide="prev")
+            span(class="icon-prev")
+        a(class="right carousel-control" href="#myCarousel" data-slide="next")
+            span(class="icon-next")
+
+    br
+
+    
     div(class="container")
     
         div(class="container-fluid")
