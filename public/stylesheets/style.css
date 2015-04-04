@@ -242,3 +242,22 @@ a {
 	position:relative;
 }
 
+/*Bootstrap Overwrite*/
+.panel-transparent {
+    background: none;
+}
+
+.panel-transparent .panel-heading{
+    /* background: rgba(46, 51, 56, 1)!important; */
+    background: rgba(255, 255, 255, 0.5)!important;
+}
+
+.panel-transparent .panel-body{
+    /* background: rgba(122, 130, 136, 1)!important; */
+    background: rgba(255, 255, 255, 0.5)!important;
+}
+
+.panel-transparent .panel-footer{
+    /* background: rgba(122, 130, 136, 1)!important; */
+    background: rgba(255, 255, 255, 0.5)!important;
+}
