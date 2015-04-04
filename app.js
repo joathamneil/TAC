@@ -4,8 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 var passport =require('passport');
-var flash = require('connect-flash');
+var LocalStrategy = require('passport-local').Strategy;
+
+//Routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var activities = require('./routes/activities');
@@ -15,18 +18,6 @@ var facilities = require('./routes/facilities');
 var signin = require('./routes/signin');
 
 var app = express();
-//passport 
-passport.serializeUser(function(user, done) {
-  done(null, user);
-});
-
-passport.deserializeUser(function(user, done) {
-  done(null, user);
-});
-
-app.use(passport.initialize());
-app.use(passport.session()); 
-app.use(flash());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,6 +31,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());  
 app.use(express.static(path.join(__dirname, 'public')));
 
+//passport bind
+app.use(require('express-session')({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+//routes
 app.use('/', routes);
 app.use('/users', users);
 <<<<<<< HEAD
@@ -51,6 +52,16 @@ app.use('/facilities', facilities);
 >>>>>>> sign in page and libraries
 app.use('/signin', signin);
 
+// passport config
+var Users = require('./models/users');
+passport.use(new LocalStrategy(Users.authenticate()));
+passport.serializeUser(Users.serializeUser());
+passport.deserializeUser(Users.deserializeUser());
+
+//mongoose
+
+mongoose.connect('mongodb://localhost/TAC')
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -59,7 +70,6 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
-
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {

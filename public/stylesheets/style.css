@@ -257,6 +257,7 @@ a {
 	position:relative;
 }
 
+<<<<<<< HEAD
 .caption {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
@@ -391,4 +392,24 @@ footer {
 
       text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
+/*Bootstrap Overwrite*/
+.panel-transparent {
+    background: none;
+}
+
+.panel-transparent .panel-heading{
+    /* background: rgba(46, 51, 56, 1)!important; */
+    background: rgba(255, 255, 255, 0.5)!important;
+}
+
+.panel-transparent .panel-body{
+    /* background: rgba(122, 130, 136, 1)!important; */
+    background: rgba(255, 255, 255, 0.5)!important;
+}
+
+.panel-transparent .panel-footer{
+    /* background: rgba(122, 130, 136, 1)!important; */
+    background: rgba(255, 255, 255, 0.5)!important;
+}
+
 /* END NOTHING FOLLLOWS */
