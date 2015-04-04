@@ -9,6 +9,7 @@ html
     script(src='/javascripts/lib/bootstrap/dist/js/bootstrap.js')
 
   body
+<<<<<<< HEAD
     div(class="conainer-fliud")
         div(class="row")
             div(id="top_nav")
@@ -22,5 +23,35 @@ html
                         a(href="theteam") OUR TEAM
                         &nbsp;&nbsp;   
                         a(href="contactus") CONTACTS
+=======
+    |<div id="fb-root"></div>
+    |<script>
+    |window.fbAsyncInit = function() {
+    |  FB.init({
+    |    appId      : '1580209102219104',
+    |    xfbml      : true,
+    |    version    : 'v2.3'
+    |  });
+    |};
+    |(function(d, s, id) {
+    |var js, fjs = d.getElementsByTagName(s)[0];
+    |if (d.getElementById(id)) return;
+    |js = d.createElement(s); js.id = id;
+    |js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    |fjs.parentNode.insertBefore(js, fjs);
+    |}(document, 'sScript', 'facebook-jssdk'));</script>
+    div(id="top_nav")
+        div(id="center_nav")
+            a(href="/") HOME
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            a(href="activities") ACTIVITIES
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            a(href="facilities") FACILITY
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            a(href="theteam") OUR TEAM
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            a(href="contactus") CONTACTS
+            block content
+>>>>>>> 2f96e67c49eb3637a768d50600bd173c0f1f748c
     block content
     include footer
